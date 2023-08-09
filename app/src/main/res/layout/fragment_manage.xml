@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ManageFragment">
+
+    <TextView
+        android:id="@+id/tvSanh"
+        android:layout_width="347dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="32dp"
+        android:background="#FCAEAE"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="+ Quản lý Sảnh"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDichVu"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="#FCAEAE"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="+ Quản lý dịch vụ"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvSanh"
+        app:layout_constraintStart_toStartOf="@+id/tvSanh"
+        app:layout_constraintTop_toBottomOf="@+id/tvSanh" />
+
+    <TextView
+        android:id="@+id/tvMonAn"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="#FCAEAE"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="+ Quản lý món ăn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvDichVu"
+        app:layout_constraintStart_toStartOf="@+id/tvDichVu"
+        app:layout_constraintTop_toBottomOf="@+id/tvDichVu" />
+
+    <TextView
+        android:id="@+id/tvThucDon"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="#FCAEAE"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="+ Quản lý thực đơn"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvMonAn"
+        app:layout_constraintStart_toStartOf="@+id/tvMonAn"
+        app:layout_constraintTop_toBottomOf="@+id/tvMonAn" />
+
+    <TextView
+        android:id="@+id/tvGoiDatTiec"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="#FCAEAE"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp"
+        android:text="+ Quản lý gói đặt tiệc"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvThucDon"
+        app:layout_constraintStart_toStartOf="@+id/tvThucDon"
+        app:layout_constraintTop_toBottomOf="@+id/tvThucDon" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addedit.AddEditSanhActivity">
+
+    <ImageView
+        android:id="@+id/imSanh"
+        android:layout_width="394dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/tomhum" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiTenSanh"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Tên Sảnh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imSanh">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edSanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiGiaSanh"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Đơn giá Sảnh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tiTenSanh">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edGiaSanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiThongTinSanh"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:hint="Thông Tin Sảnh"
+        app:layout_constraintEnd_toEndOf="@+id/tiGiaSanh"
+        app:layout_constraintStart_toStartOf="@+id/tiGiaSanh"
+        app:layout_constraintTop_toBottomOf="@+id/tiGiaSanh">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edThongTinSanh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="textPersonName" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiSoLuongBanToiDa"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:hint="Số Lượng bàn tối đa"
+        app:layout_constraintEnd_toEndOf="@+id/tiThongTinSanh"
+        app:layout_constraintStart_toStartOf="@+id/tiThongTinSanh"
+        app:layout_constraintTop_toBottomOf="@+id/tiThongTinSanh">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edSoLuongBanToiDa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiDonGiaBan"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        android:hint="Đơn giá bàn"
+        app:layout_constraintEnd_toEndOf="@+id/tiSoLuongBanToiDa"
+        app:layout_constraintStart_toStartOf="@+id/tiSoLuongBanToiDa"
+        app:layout_constraintTop_toBottomOf="@+id/tiSoLuongBanToiDa">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edDonGiaBan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSaveSanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Lưu"
+        app:layout_constraintEnd_toEndOf="@+id/tiDonGiaBan"
+        app:layout_constraintStart_toStartOf="@+id/tiDonGiaBan"
+        app:layout_constraintTop_toBottomOf="@+id/tiDonGiaBan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

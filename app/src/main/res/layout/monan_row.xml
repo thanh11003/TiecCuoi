@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgMonAn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:src='@drawable/imagedattiec'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTenMon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="TenMon"
+        app:layout_constraintStart_toEndOf="@+id/imgMonAn"
+        app:layout_constraintTop_toTopOf="@+id/imgMonAn" />
+
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gia"
+        app:layout_constraintStart_toStartOf="@+id/tvTenMon"
+        app:layout_constraintTop_toBottomOf="@+id/tvTenMon" />
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgMonAn"
+        app:layout_constraintStart_toEndOf="@+id/imgMonAn"
+        app:layout_constraintTop_toTopOf="@+id/imgMonAn"
+        app:srcCompat="@drawable/round_edit_24" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toEndOf="@+id/ivEdit"
+        app:layout_constraintTop_toTopOf="@+id/ivEdit"
+        app:srcCompat="@drawable/round_delete_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
